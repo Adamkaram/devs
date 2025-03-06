@@ -1,0 +1,10 @@
+
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://raw.githubusercontent.com/Adamkaram/devs/main/resources/setup",
+      "permanent": true
+    }
+  ]
+}

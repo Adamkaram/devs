@@ -19,8 +19,8 @@
 !todo.md
 !.dockerignore
 !.gitignore
-!.index.html
-!.vercel.json
+!index.html
+!vercel.json
 
 !cmd/**
 !env/**
