@@ -19,9 +19,9 @@
 !todo.md
 !.dockerignore
 !.gitignore
-!index.html
 !vercel.json
 
+!public/index.html
 !cmd/**
 !env/**
 !fonts/**
