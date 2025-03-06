@@ -20,7 +20,7 @@
 !todo.md
 !.dockerignore
 !.gitignore
-
+!.index.html
 
 !cmd/**
 !env/**
