@@ -4,3 +4,8 @@
 ```
  curl -fsSL https://ahmadkaram-dev.vercel.app | sh
 ```
+
+# for adding one line to install 
+1- fork this repo
+2- there's two main files public.index and vercel.json those files required for making vecel project work(index.html) and vercel.json for redirecting to sh file 
+3- edit resources/setup file to match your repo file
