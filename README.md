@@ -1,2 +1,5 @@
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Adamkaram/devs/refs/heads/main/resources/setup)"
-ahmadkaram-dev.vercel.app
+### with one line you are ready to go
+
+```
+ curl -fsSL https://ahmadkaram-dev.vercel.app | sh
+```
