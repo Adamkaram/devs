@@ -4,7 +4,6 @@
 !cmd/
 !env/
 !fonts/
-!playbooks/
 !resources/
 !runs/
 !.tmux-sessionizer/
@@ -21,11 +20,11 @@
 !.dockerignore
 !.gitignore
 !.index.html
+!.vercel.json
 
 !cmd/**
 !env/**
 !fonts/**
-!playbooks/**
 !resources/**
 !runs/**
 !.tmux-sessionizer/**
