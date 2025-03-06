@@ -7,7 +7,7 @@
 !resources/
 !runs/
 !.tmux-sessionizer/
-
+!public
 
 !dev-env
 !Dockerfile
@@ -21,7 +21,7 @@
 !.gitignore
 !vercel.json
 
-!public/index.html
+!public/**
 !cmd/**
 !env/**
 !fonts/**
