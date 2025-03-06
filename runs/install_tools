@@ -1,0 +1,31 @@
+
+#!/bin/bash
+
+set -e  # توقف التنفيذ عند أي خطأ
+
+echo "Updating package lists..."
+sudo apt update
+
+echo "Installing carapace-bin..."
+sudo apt install -y carapace-bin
+
+echo "Installing zoxide..."
+cargo install zoxide --locked
+
+echo "Initializing zoxide for Nushell..."
+zoxide init nushell | save -f ~/.zoxide.nu
+source ~/.zoxide.nu
+
+echo "Installing atuin..."
+cargo install atuin
+
+echo "Configuring atuin for Zsh..."
+echo 'eval "$(atuin init zsh)"' >> ~/.zshrc
+
+echo "Creating Atuin directory..."
+mkdir -p ~/.local/share/atuin/
+
+echo "Initializing Atuin for Nushell..."
+atuin init nu | save ~/.local/share/atuin/init.nu
+
+echo "✅ All tools installed successfully!"

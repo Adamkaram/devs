@@ -1,0 +1,134 @@
+ls
+l
+eza
+ps
+$env
+ls | sort-by modified
+ls | sort-by modified --reverse
+ps | where cpu > 3
+ps | where cpu > 5
+cd lua-
+cd lua-course
+ls 
+ls | where name == test.lua
+ls | where name == "test.lua"
+ls | where name == "test.lu"
+$nu.config-path
+vim /home/adam/.config/nushell/config.nu
+nvim /home/adam/.config/nushell/config.nu
+'aeiou' | split chars
+curl termux.carapace.sh | sh
+deb [trusted=yes] https://termux.carapace.sh termux extras  
+carapace
+$env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
+mkdir ~/.cache/carapace
+carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
+source ~/.cache/carapace/init.nu
+nvim /home/adam/.config/nushell/config.nu
+zsh
+$env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
+mkdir ~/.cache/carapace
+carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
+source ~/.cache/carapace/init.nu
+cd  ~/.config/nushell/env.nu
+~/.zoxide.nu
+$nu.config-path
+/home/adam/.config/nushell/
+ls
+nvim . 
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+atuin register
+atuin
+/home/adam/.config/nushell/
+nvim . 
+zsh 
+zsh
+/home/adam/.config/nushell/
+nvim 
+nvim .
+atuin import auto
+atuin sync
+mkdir ~/.local/share/atuin/
+atuin init nu | save ~/.local/share/atuin/init.nu
+source ~/.local/share/atuin/init.nu
+echo 'eval "$(atuin init zsh)"' >> ~/.zshrc
+zinit load atuinsh/atuin
+cd nvim
+zoxide nvim
+use nupm/nupm
+cd 
+ls
+pwd
+git clone https://github.com/nushell/nupm.git
+cd nupm/
+ls
+use nupm/
+use nupm/nupm
+use nupm/nupm<\n>nupm install nupm --force --path
+nupm install nupm --force --path
+cd .
+ls
+nupm install nupm --force --path
+use nupm/nupm
+use nupm/
+overlay use nupm/ --prefix
+overlay use
+use nupm/nupm<\n>nupm install nupm --force --path
+use nupm/nupm nupm install nupm --force --path
+use nupm/nupm nupm install nupm/
+cd 
+use nupm/nupm<\n>nupm install nupm --force --path
+nupm
+git clone https://github.com/FMotalleb/nu_plugin_qr_maker.git
+nupm
+nupm install --path nu_plugin_qr_maker -f
+register  ~/.cargo/bin/nu_plugin_qr_maker
+plugin add ~/.cargo/bin/nu_plugin_qr_maker
+~> "https://google.com" | to qr
+register target/debug/nu_plugin_qr_maker
+cd nu_plugin_qr_maker
+register target/debug/nu_plugin_qr_maker
+plugin add
+plugin add  target/debug/nu_plugin_qr_maker
+ls
+cd target
+ls
+plugin add  target/
+cd ..
+ls
+ps
+plugin add ./target/release/nu_plugin_nupsql
+nupsql
+nuql
+v
+cd
+v /home/adam/.config/nushell/config.nu
+$nu.config-path
+nvim . 
+v /home/adam/.config/nushell/config.nu
+zoxide 
+z
+z nvim
+z
+cd nvim
+nvim .
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
+z nvim
+nvim . 
+nvim 
+cd conf.nu
+z conf.nu
+nvim /home/adam/.config/nushell/env.nu
+z config nvim
+nvim .
