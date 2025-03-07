@@ -13,5 +13,5 @@ jobs:
 
       - name: Run tests
         run: |
-          echo \"Running tests...\"
+          echo \"Running tests..x.\"
           # هنا تحط أوامر الاختبار
