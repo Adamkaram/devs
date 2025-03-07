@@ -3,3 +3,4 @@
 set -e
 
 sudo apt install font-manager
+sudo apt install gnome-tweaks
