@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -e
-
-sudo apt install font-manager
+sudo add-apt-repository ppa:font-manager/staging
+sudo apt-get update
+sudo apt-get install font-manager
 sudo apt install gnome-tweaks
