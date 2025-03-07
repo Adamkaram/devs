@@ -16,5 +16,7 @@ and vercel.json for redirecting to sh file
 
 # credit
 1- (the primeagen) https://github.com/ThePrimeagen/dev
+
 2- (adibhanna) https://github.com/adibhanna/nvim
+
 3- as always thanx gpt for hard work
