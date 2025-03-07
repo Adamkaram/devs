@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -e
+
+curl -L -o nekoray.deb  "https://github.com/Mahdi-zarei/nekoray/releases/download/4.2.9/nekoray-4.2.9-2025-01-20-debian-x64.deb"
+
+sudo dpkg -i nekoray.deb
+
+sudo apt-get install -f -y
+
+rm nekoray.deb
