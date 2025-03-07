@@ -8,6 +8,8 @@
 !runs/
 !.tmux-sessionizer/
 !public
+!.github/
+
 
 !dev-env
 !Dockerfile
@@ -28,4 +30,5 @@
 !resources/**
 !runs/**
 !.tmux-sessionizer/**
+!.github/**
 
