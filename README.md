@@ -14,6 +14,14 @@ and vercel.json for redirecting to sh file
 
 3- edit resources/setup file to match your repo file
 
+#todo
+
+fetch my ssh and private key from vercel with password and username
+
+listing plugins and lsp in readme
+
+
+
 # credit
 1- (the primeagen) https://github.com/ThePrimeagen/dev
 
