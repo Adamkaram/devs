@@ -1,8 +1,11 @@
 export XDG_CONFIG_HOME=$HOME/.config
-VIM="nvim"
+ VIM="nvim"
 
-PERSONAL=$XDG_CONFIG_HOME/personal
-DEV_ENV=$HOME/dev
+export PERSONAL=$XDG_CONFIG_HOME/personal
+export DEV_ENV=$HOME/dev
+
+
+
 for i in `find -L $PERSONAL`; do
     source $i
 done
@@ -45,12 +48,13 @@ addToPathFront() {
         export PATH=$1:$PATH
     fi
 }
-
+addToPathFront $HOME/.zig
 addToPathFront $HOME/.local/.npm-global/bin
 addToPathFront $HOME/.local/scripts
 addToPathFront $HOME/.local/bin
 addToPathFront $HOME/.local/n/bin/
 addToPathFront $HOME/.local/apps/
+addToPathFront $HOME/.local/npm/bin
 
 # do i need this one?
 addToPathFront $HOME/.local/go/bin
@@ -58,8 +62,9 @@ addToPathFront /usr/local/go/bin
 addToPathFront $HOME/personal/sumneko/bin
 addToPathFront $HOME/.deno/bin
 addToPath $HOME/.cargo/bin
-addToPath $HOME/.zig
-addToPath $HOME/.local/bin
+addToPathFront $HOME/.local/zig true # some how zig-0.13 just keeps getting added and i CANNOT find it anywhere
+addToPath $HOME/.sst/bin
+addToPath $HOME/.local/personal
 
 # thanks gt
 alias gt='NODE_OPTIONS="--no-deprecation" gt'
