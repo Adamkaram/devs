@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+TEMP_DIR=$(mktemp -d)
+
+release_url=$(curl -sL https://api.github.com/repos/telegramdesktop/tdesktop/releases \
+  | jq -r '[.[] | select(.prerelease==true)] | sort_by(.published_at) | reverse | .[0] | .assets[] | select(.browser_download_url | contains("tar.xz")) | .browser_download_url')
+
+if [ -z "$release_url" ]; then
+  echo "لم يتم العثور على رابط التحميل للنسخة التجريبية."
+  exit 1
+fi
+
+echo "جارٍ تحميل الملف من: $release_url"
+wget "$release_url" -O "$TEMP_DIR/TelegramBeta.tar.xz"
+
+echo "جارٍ استخراج الملف..."
+tar -xf "$TEMP_DIR/TelegramBeta.tar.xz" -C "$TEMP_DIR"
+
+# التحقق من نجاح الاستخراج
+if [ -d "$TEMP_DIR/Telegram" ]; then
+  echo "تم استخراج المجلد Telegram بنجاح."
+else
+  echo "م يتم العثور على مجلد Telegram بعد الاستخراج."
+  exit 1
+fi
+
+sudo mv "$TEMP_DIR/Telegram" /opt/telegram
+sudo ln -sf /opt/telegram/Telegram /usr/bin/telegram-desktop
+
+rm -rf "$TEMP_DIR"
+
+echo "done"
