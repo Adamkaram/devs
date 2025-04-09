@@ -112,7 +112,9 @@ sudo apt install -y \
     libxdg-basedir-dev \
     libglew-dev \
     libwayland-dev \
-    libwl-clipboard-dev
+    libwl-clipboard-dev \
+     mkvtoolnix \
+      mkvtoolnix-gui
 
 # Clone Alacritty repository
 git clone https://github.com/alacritty/alacritty.git
@@ -133,18 +135,3 @@ sudo update-desktop-database
 mkdir -p ${ZDOTDIR:-~}/.zsh_functions
 echo 'fpath+=${ZDOTDIR:-~}/.zsh_functions' >> ${ZDOTDIR:-~}/.zshrc
 cp extra/completions/_alacritty ${ZDOTDIR:-~}/.zsh_functions/_alacritty
-
-echo "Alacritty installation complete!"
-
-# Configure Alacritty themes
-mkdir -p ~/.config/alacritty/themes
-git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
-
-# Update Alacritty config
-echo "[general]
-import = [
-    \"~/.config/alacritty/themes/themes/tokyo_night_enhanced.toml\"
-]" > ~/.config/alacritty/alacritty.yml
-
-echo "Alacritty installation and configuration complete!"
-echo "Installation complete!"
