@@ -21,9 +21,15 @@ return {
   lua_ls = {
     settings = {
       Lua = {
-        -- اندمجنا مع الكود بتاعك اللي بيحدد "Lua 5.1" وكمان اللي عنده "LuaJIT"
-        -- الاتنين تقريبًا واحد، لكن خلينا "5.1" زي ما حاطط في إعداداتك
-        runtime = { version = "Lua 5.1" },
+           format = {
+                                    enable = true,
+                                    -- Put format options here
+                                    -- NOTE: the value should be STRING!!
+                                    defaultConfig = {
+                                        indent_style = "space",
+                                        indent_size = "2",
+                                    }
+                                },
         workspace = {
           checkThirdParty = false,
           library = {
@@ -33,10 +39,6 @@ return {
         },
         completion = {
           callSnippet = "Replace",
-        },
-        diagnostics = {
-          -- اللي أنت ضايفها
-          globals = { "bit", "vim", "it", "describe", "before_each", "after_each" },
         },
       },
     },

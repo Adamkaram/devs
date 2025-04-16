@@ -1,4 +1,13 @@
-
+local root_files = {
+  '.luarc.json',
+  '.luarc.jsonc',
+  '.luacheckrc',
+  '.stylua.toml',
+  'stylua.toml',
+  'selene.toml',
+  'selene.yml',
+  '.git',
+}
 return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
@@ -22,6 +31,7 @@ return {
     require("conform").setup({
       formatters_by_ft = {
         -- مثال: go = { "gofmt" },
+
       },
     })
 
