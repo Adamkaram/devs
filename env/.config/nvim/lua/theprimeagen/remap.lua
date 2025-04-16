@@ -37,7 +37,7 @@ vim.keymap.set("n", "YY", "va{Vy", vim.tbl_extend("force", opts, { desc = "Selec
 
 -- Exit on jj and jk
 vim.keymap.set("i", "jj", "<ESC>", vim.tbl_extend("force", opts, { desc = "Exit insert mode with 'jj'" }))
-vim.keymap.set("i", "jk", "<ESC>", vim.tbl_extend("force", opts, { desc = "Exit insert mode with 'jk'" }))
+vim.keymap.set("i", "kk", "<ESC>", vim.tbl_extend("force", opts, { desc = "Exit insert mode with 'jk'" }))
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without yanking in visual block", noremap = true, silent = true })
