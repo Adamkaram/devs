@@ -16,7 +16,7 @@ require("theprimeagen.lazy.config.utils")
 -- DO NOT INCLUDE THIS
 -- DO.not
 
-local augroup = vim.api.nvim_create_augroup
+   local augroup = vim.api.nvim_create_augroup
 local ThePrimeagenGroup = augroup('ThePrimeagen', {})
 
 local autocmd = vim.api.nvim_create_autocmd

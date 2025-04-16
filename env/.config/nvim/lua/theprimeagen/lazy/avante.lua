@@ -1,6 +1,6 @@
 -- https://github.com/yetone/avante.nvim
 return {
-  "yetone/avante.nvim",
+     "yetone/avante.nvim",
   enabled = false,
   event = "VeryLazy",
   lazy = false,
