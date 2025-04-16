@@ -108,6 +108,6 @@ vim.keymap.set("n", "<Left>", ":bprevious<CR>", vim.tbl_extend("force", opts, { 
 
 
 
-vim.keymap.set("n", "<leader>f", function()
+vim.keymap.set("n", "<leader>bf", function()
     require("conform").format({ bufnr = 0 })
 end)
