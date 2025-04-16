@@ -64,6 +64,8 @@ vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz",
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz", { desc = "Go to next location", noremap = true, silent = true })
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", { desc = "Go to previous location", noremap = true, silent = true })
 
+vim.keymap.set("n", "<leader>jj", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
+vim.keymap.set("n", "<leader>kk", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
     { desc = "Search & replace word under cursor", noremap = true, silent = true })
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { desc = "Make file executable", silent = true, noremap = true })
