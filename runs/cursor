@@ -1,3 +1,20 @@
+
 #!/usr/bin/env bash
 
-bash <(curl -s https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/install.sh)
+# تحميل السكربت الخاص بتثبيت Cursor من GitHub
+INSTALLER_URL="https://raw.githubusercontent.com/mablr/cursor-installer/master/setup.sh"
+TEMP_FILE="/tmp/cursor_setup.sh"
+
+echo "📥 Downloading Cursor installer script..."
+curl -fsSL "$INSTALLER_URL" -o "$TEMP_FILE"
+
+if [ $? -ne 0 ]; then
+  echo "❌ Failed to download installer script."
+  exit 1
+fi
+
+echo "🚀 Running installer with argument -a..."
+bash "$TEMP_FILE" -a
+
+# تنظيف الملف المؤقت
+rm -f "$TEMP_FILE"
